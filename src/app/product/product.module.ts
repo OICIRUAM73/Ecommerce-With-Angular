@@ -5,6 +5,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ProductComponent } from './components/product/product.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProductsComponent } from './components/products/products.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -17,7 +18,8 @@ import { ProductsComponent } from './components/products/products.component';
   imports: [
     CommonModule,
     SharedModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    MaterialModule
   ]
 })
 export class ProductModule { }

@@ -14,10 +14,14 @@ export class ProductsService {
   ) { }
 
   getAllProducts() {
-    return this.http.get<Product[]>(`${environment.api_url}/products/`);
+    return this.http.get<Product[]>(`${environment.api_url}/products`);
   }
 
   getProduct(id: string) {
     return this.http.get<Product>(`${environment.api_url}/products/${id}`);
+  }
+
+  createProduct(product: Product) {
+    return this.http.post(`${environment.api_url}/products`, product);
   }
 }

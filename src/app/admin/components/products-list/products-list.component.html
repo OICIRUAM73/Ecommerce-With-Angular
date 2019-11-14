@@ -18,9 +18,9 @@
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef> Acions </th>
     <td mat-cell *matCellDef="let product; let i = index"> 
-      <button mat-icon-button color="primary" aria-label="Editar producto">
+      <a mat-icon-button color="primary" aria-label="Editar producto" [routerLink]="['edit', product.id]">
         <mat-icon>edit</mat-icon>
-      </button>
+      </a>
       <button mat-icon-button color="warn" aria-label="Eliminar producto" (click)="deleteProduct(product.id, i)">
           <mat-icon>delete</mat-icon>
         </button>

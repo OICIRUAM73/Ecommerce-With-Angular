@@ -1,5 +1,5 @@
-# shop-with-angular
-A basic ecommerce app using Angular 8 and Firebase
+# Store with Angular 8
+A basic store app using Angular 8 and Firebase
 
 # How it works
 

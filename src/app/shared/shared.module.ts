@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { CartProductCounterPipe } from './pipes/cart-product-counter/cart-product-counter.pipe';
+import { ProductDistinctPipe } from './pipes/product-distinct/product-distinct.pipe';
 
 
 
@@ -15,7 +17,9 @@ import { MaterialModule } from '../material/material.module';
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartProductCounterPipe,
+    ProductDistinctPipe,
   ],
   imports: [
     CommonModule,
@@ -27,7 +31,9 @@ import { MaterialModule } from '../material/material.module';
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartProductCounterPipe,
+    ProductDistinctPipe
   ]
 })
 export class SharedModule { }
